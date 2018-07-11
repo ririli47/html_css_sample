@@ -623,3 +623,69 @@ header {
 .bread a:hover {
     background-color: rgba(0,0,0,0.3);
 }
+
+
+/* アバウトページ：画像と沿革 */
+.history {
+    background-color: #5D9AB2;
+    background-color: var(--main-color);
+    color: #ffffff;
+    color: var(--text-bright-color);
+}
+
+.history h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.history .text {
+    padding: 20px;
+}
+
+.history .photo {
+    min-height: 300px;
+    background-image: url(img/plant.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.history table {
+    border-collapse: collapse;
+    border-top: solid 1px #dddddd;
+    border-top: solid 1px var(--gray-color);
+    font-size: 0.875rem;
+}
+
+.history th,
+.history tr {
+    border-bottom: solid 1px #dddddd;
+    border-bottom: solid 1px var(--gray-color);
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem
+}
+
+.history th {
+    padding-right: 1rem;
+    text-align: center;
+    word-break: keep-all;
+}
+
+@media (min-width: 768px) {
+    .history .container {
+        display: flex;
+        max-width: 1000px;
+        max-width: var(--large-width);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .history .photo {
+        flex: 3;
+    }
+
+    .history .text {
+        flex: 2;
+        padding: 50px;
+    }
+}
