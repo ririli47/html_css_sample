@@ -950,3 +950,55 @@ header {
         flex: 1 1 25%;
     }
 }
+
+
+/* アレンジ: ヘッダーの色 */
+.head-color {
+    background-color: #5D9AB2;
+    background-color: var(--main-color);
+    color: #ffffff;
+    color: var(--text-bright-color);
+}
+
+.head-color .headA {
+    background-color: transparent;
+    color: inherit;
+}
+
+.head-color .headC {
+    color: inherit;
+}
+
+/* アレンジ: ヘッダーとヒーローイメージを一体化 */
+.head-hero {
+    background-color: transparent;
+    color: #ffffff;
+    color: var(--text-bright-color);
+}
+
+.head-hero .headA {
+    background-color: transparent;
+    color: inherit;
+}
+
+.head-hero .headC {
+    color: inherit;
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .head-hero .headB {
+        background-color: rgba(0,0,0, 0.6);
+    }
+}
+
+/* アレンジ: ヘッダーを画面上部に固定 */
+
+.head-fixed, 
+.no-hero .head-fixed {
+    position: fixed;
+}
+
+.nohero .head-fixed + * {
+    margin-top: 70px;
+}
